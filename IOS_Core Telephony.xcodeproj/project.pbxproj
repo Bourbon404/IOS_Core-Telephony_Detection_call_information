@@ -16,6 +16,8 @@
 		572127201814FDE600A74FD9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5721271F1814FDE600A74FD9 /* Default.png */; };
 		572127221814FDE600A74FD9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 572127211814FDE600A74FD9 /* Default@2x.png */; };
 		572127241814FDE600A74FD9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 572127231814FDE600A74FD9 /* Default-568h@2x.png */; };
+		5721272B1814FDF800A74FD9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5721272A1814FDF800A74FD9 /* CoreTelephony.framework */; };
+		5721272E181508F000A74FD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5721272D181508F000A74FD9 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		5721271F1814FDE600A74FD9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		572127211814FDE600A74FD9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		572127231814FDE600A74FD9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5721272A1814FDF800A74FD9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5721272C181508F000A74FD9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5721272D181508F000A74FD9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5721272B1814FDF800A74FD9 /* CoreTelephony.framework in Frameworks */,
 				5721270E1814FDE600A74FD9 /* UIKit.framework in Frameworks */,
 				572127101814FDE600A74FD9 /* Foundation.framework in Frameworks */,
 				572127121814FDE600A74FD9 /* CoreGraphics.framework in Frameworks */,
@@ -68,6 +74,7 @@
 		5721270C1814FDE600A74FD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5721272A1814FDF800A74FD9 /* CoreTelephony.framework */,
 				5721270D1814FDE600A74FD9 /* UIKit.framework */,
 				5721270F1814FDE600A74FD9 /* Foundation.framework */,
 				572127111814FDE600A74FD9 /* CoreGraphics.framework */,
@@ -81,6 +88,8 @@
 				5721271C1814FDE600A74FD9 /* AppDelegate.h */,
 				5721271D1814FDE600A74FD9 /* AppDelegate.m */,
 				572127141814FDE600A74FD9 /* Supporting Files */,
+				5721272C181508F000A74FD9 /* ViewController.h */,
+				5721272D181508F000A74FD9 /* ViewController.m */,
 			);
 			path = "IOS_Core Telephony";
 			sourceTree = "<group>";
@@ -166,6 +175,7 @@
 			files = (
 				5721271A1814FDE600A74FD9 /* main.m in Sources */,
 				5721271E1814FDE600A74FD9 /* AppDelegate.m in Sources */,
+				5721272E181508F000A74FD9 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +205,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ji rock (WNH4SRHEY2)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -210,6 +220,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2A73790A-C4CC-473E-ADF6-BAF90A52AC66";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -226,7 +237,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ji rock (WNH4SRHEY2)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -234,6 +245,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2A73790A-C4CC-473E-ADF6-BAF90A52AC66";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -242,10 +254,13 @@
 		572127281814FDE600A74FD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOS_Core Telephony/IOS_Core Telephony-Prefix.pch";
+				HEADER_SEARCH_PATHS = /System/Library/Frameworks/CoreTelephony.framework/Headers;
 				INFOPLIST_FILE = "IOS_Core Telephony/IOS_Core Telephony-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -253,10 +268,13 @@
 		572127291814FDE600A74FD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOS_Core Telephony/IOS_Core Telephony-Prefix.pch";
+				HEADER_SEARCH_PATHS = /System/Library/Frameworks/CoreTelephony.framework/Headers;
 				INFOPLIST_FILE = "IOS_Core Telephony/IOS_Core Telephony-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -280,6 +298,7 @@
 				572127291814FDE600A74FD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
